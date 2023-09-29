@@ -474,6 +474,8 @@ public class WhisperContext {
       options.hasKey("speedUp") ? options.getBoolean("speedUp") : false,
       // jboolean translate,
       options.hasKey("translate") ? options.getBoolean("translate") : false,
+      // jboolean tdrz_enable,
+      options.hasKey("tdrzEnable") ? options.getBoolean("tdrzEnable") : false,
       // jstring language,
       options.hasKey("language") ? options.getString("language") : "auto",
       // jstring prompt
@@ -645,6 +647,7 @@ public class WhisperContext {
     int best_of,
     boolean speed_up,
     boolean translate,
+    boolean tdrz_enable,
     String language,
     String prompt,
     ProgressCallback progressCallback

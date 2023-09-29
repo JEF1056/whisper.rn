@@ -381,6 +381,7 @@ void AudioInputCallback(void * inUserData,
     params.print_special    = false;
     params.speed_up         = options[@"speedUp"] != nil ? [options[@"speedUp"] boolValue] : false;
     params.translate        = options[@"translate"] != nil ? [options[@"translate"] boolValue] : false;
+    params.tdrz_enable      = options[@"tdrzEnable"] != nil ? [options[@"tdrzEnable"] boolValue] : false;
     params.language         = options[@"language"] != nil ? [options[@"language"] UTF8String] : "auto";
     params.n_threads        = n_threads > 0 ? n_threads : default_n_threads;
     params.offset_ms        = 0;

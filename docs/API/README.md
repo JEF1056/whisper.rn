@@ -82,6 +82,7 @@ ___
 | `prompt?` | `string` | Initial Prompt |
 | `speedUp?` | `boolean` | Speed up audio by x2 (reduced accuracy) |
 | `temperature?` | `number` | Tnitial decoding temperature |
+| `tdrzEnable?` |  `boolean` | Enable tinydiarize https://github.com/ggerganov/whisper.cpp/pull/1058 |
 | `temperatureInc?` | `number` | - |
 | `tokenTimestamps?` | `boolean` | Enable token-level timestamps |
 | `translate?` | `boolean` | Translate from source language to english (Default: false) |

@@ -30,6 +30,8 @@ export type TranscribeOptions = {
   bestOf?: number,
   /** Speed up audio by x2 (reduced accuracy) */
   speedUp?: boolean,
+  /** Enable tinydiarize (https://github.com/ggerganov/whisper.cpp/pull/1058) */
+  tdrzEnable?: boolean,
   /** Initial Prompt */
   prompt?: string,
 }

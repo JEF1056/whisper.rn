@@ -232,6 +232,7 @@ Java_com_rnwhisper_WhisperContext_fullTranscribe(
     jint best_of,
     jboolean speed_up,
     jboolean translate,
+    jboolean tdrz_enable
     jstring language,
     jstring prompt,
     jobject progress_callback_instance
@@ -265,6 +266,7 @@ Java_com_rnwhisper_WhisperContext_fullTranscribe(
     params.offset_ms = 0;
     params.no_context = true;
     params.single_segment = false;
+    params.tdrz_enable = tdrz_enable;
 
     if (max_len > -1) {
         params.max_len = max_len;
